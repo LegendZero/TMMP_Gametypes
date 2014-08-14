@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gametype>
+	<!--Core Settings-->
+	<name display="Oddball FFA">FFA</name>
+	<description>Hold the ball for as long as possible, all by your self.</description>
+	<version>1.0.0</version>
+
+	<!--Team Settings-->
+	<teams>
+	</teams>
+
+	<!--Oddball Settings-->
+	<score-time>1</score-time>
+	<reset-time>15</reset-time>
+     <oddball name="&6Oddball" durability="1">SKULL</oddball>
+	
+	<!--Game Settings-->
+	<score-to-win>100</score-to-win>
+	<time-limit>10</time-limit>
+	<friendly-fire>false</friendly-fire>
+	<betrayal-booting threshold="3">false</betrayal-booting>
+	<damage-multi>1.0</damage-multi>
+	<can-join-late>true</can-join-late>
+	
+	<!--Round Settings-->
+	<rounds>1</rounds>
+	<lives-per-round>0</lives-per-round>
+
+	<!--Item Settings-->
+	<items initial="true" respawn="true" personal="true"/>
+	<loadout>
+		<item slot="0" >STONE_SWORD</item>
+		<item slot="2" >BOW</item>
+		<item slot="29" amount="16" name="Arrows">ARROW</item>
+		<item slot="8" amount="1" lore="Loadout Item|&amp;4Locked">COMPASS</item>
+	</loadout>
+</gametype>

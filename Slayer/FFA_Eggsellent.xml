@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gametype>
+	<!--Core Settings-->
+	<name display="Eggsellent FFA">FFA_Eggsellent</name>
+	<description>Eggs. Eggs Everywhere</description>
+	<version>1.0.0</version>
+
+	<!--Team Settings-->
+	<teams>
+	</teams>
+
+	<!--Slayer Settings-->
+	<kill-points>1</kill-points>
+	<death-points>0</death-points>
+	<suicide-points>-1</suicide-points>
+	<betrayal-points>-1</betrayal-points>
+
+	<!--Game Settings-->
+	<score-to-win>25</score-to-win>
+	<time-limit>10</time-limit>
+	<friendly-fire>false</friendly-fire>
+	<betrayal-booting threshold="3">true</betrayal-booting>
+	<damage-multi>100.0</damage-multi>
+	<can-join-late>true</can-join-late>
+	
+	<!--Round Settings-->
+	<rounds>1</rounds>
+	<lives-per-round>0</lives-per-round>
+
+	<!--Item Settings-->
+	<items initial="false" respawn="false" personal="true"/>
+	<loadout>
+		<item slot="0">WOOD_SWORD</item>
+		<item slot="2" amount="12" name="Chickenator 3000">FEATHER</item>
+		<item slot="29" amount="24" name="Eggs">EGG</item>
+	</loadout>
+	<killreward>
+		<item slot="29" name="Eggs" amount="12">EGG</item>
+	</killreward>
+</gametype>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gametype>
+	<!--Core Settings-->
+	<name display="Oddball">Oddball</name>
+	<description>Hold the ball for as long as possible.</description>
+	<version>1.0.0</version>
+
+	<!--Team Settings-->
+	<teams>
+		<team>
+			<name>Red Team</name>
+			<display>&amp;cRed Team</display>
+			<prefix>&amp;c</prefix>
+			<suffix>&amp;r</suffix>
+			<armor>
+				<helmet color="FF0000" >LEATHER_HELMET</helmet>
+				<chestplate color="FF0000" >LEATHER_CHESTPLATE</chestplate>
+				<leggings color="FF0000" >LEATHER_LEGGINGS</leggings>
+				<boots color="FF0000" >LEATHER_BOOTS</boots>
+			</armor>
+		</team>
+		<team>
+			<name>Blue Team</name>
+			<display>&amp;9Blue Team</display>
+			<prefix>&amp;9</prefix>
+			<suffix>&amp;r</suffix>
+			<armor>
+				<helmet color="0000FF" >LEATHER_HELMET</helmet>
+				<chestplate color="0000FF" >LEATHER_CHESTPLATE</chestplate>
+				<leggings color="0000FF" >LEATHER_LEGGINGS</leggings>
+				<boots color="0000FF" >LEATHER_BOOTS</boots>
+			</armor>
+		</team>
+	</teams>
+
+	<!--Oddball Settings-->
+	<score-time>1</score-time>
+	<reset-time>15</reset-time>
+     <oddball name="&amp;6Oddball" durability="1">SKULL_ITEM</oddball>
+	
+	<!--Game Settings-->
+	<score-to-win>250</score-to-win>
+	<time-limit>10</time-limit>
+	<friendly-fire>false</friendly-fire>
+	<betrayal-booting threshold="3">true</betrayal-booting>
+	<damage-multi>1.0</damage-multi>
+	<can-join-late>true</can-join-late>
+	
+	<!--Round Settings-->
+	<rounds>1</rounds>
+	<lives-per-round>0</lives-per-round>
+
+	<!--Item Settings-->
+	<items initial="true" respawn="true" personal="true"/>
+	<loadout>
+		<item slot="0" >STONE_SWORD</item>
+		<item slot="2" >BOW</item>
+		<item slot="29" amount="16" name="Arrows">ARROW</item>
+		<item slot="8" amount="1" name="&amp;6Objective">COMPASS</item>
+	</loadout>
+</gametype>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gametype>
+	<!--Core Settings-->
+	<name display="Capture the Flag">CTF</name>
+	<description>Bring the enemy flag back to base.</description>
+	<version>1.0.0</version>
+
+	<!--Team Settings-->
+	<teams>
+		<team>
+			<name>Red Team</name>
+			<display>&amp;cRed Team</display>
+			<prefix>&amp;c</prefix>
+			<suffix>&amp;r</suffix>
+			<armor>
+				<helmet color="FF0000" lore="Loadout Item">LEATHER_HELMET</helmet>
+				<chestplate color="FF0000" lore="Loadout Item">LEATHER_CHESTPLATE</chestplate>
+				<leggings color="FF0000" lore="Loadout Item">LEATHER_LEGGINGS</leggings>
+				<boots color="FF0000" lore="Loadout Item">LEATHER_BOOTS</boots>
+			</armor>
+			<flag name="&amp;cRed Flag" durability="14">WOOL</flag>
+		</team>
+		<team>
+			<name>Blue Team</name>
+			<display>&amp;9Blue Team</display>
+			<prefix>&amp;9</prefix>
+			<suffix>&amp;r</suffix>
+			<armor>
+				<helmet color="0000FF" lore="Loadout Item">LEATHER_HELMET</helmet>
+				<chestplate color="0000FF" lore="Loadout Item">LEATHER_CHESTPLATE</chestplate>
+				<leggings color="0000FF" lore="Loadout Item">LEATHER_LEGGINGS</leggings>
+				<boots color="0000FF" lore="Loadout Item">LEATHER_BOOTS</boots>
+			</armor>
+		    <flag name="&amp;9Blue Flag" durability="11">WOOL</flag>
+		</team>
+	</teams>
+
+	<!--CTF Settings-->
+	<flag-at-home>false</flag-at-home>
+	<flag-reset>15</flag-reset>
+	<flag-recover>5</flag-recover>
+	<flag-capture-respawn>1</flag-capture-respawn>
+	<flag-respawn-retry>1</flag-respawn-retry>
+	
+	<!--Game Settings-->
+	<score-to-win>5</score-to-win>
+	<time-limit>10</time-limit>
+	<friendly-fire>false</friendly-fire>
+	<betrayal-booting threshold="3">false</betrayal-booting>
+	<damage-multi>1.0</damage-multi>
+	<can-join-late>true</can-join-late>
+	
+	<!--Round Settings-->
+	<rounds>1</rounds>
+	<lives-per-round>0</lives-per-round>
+
+	<!--Item Settings-->
+	<items initial="true" respawn="true" personal="true"/>
+	<loadout>
+		<item slot="0" lore="Loadout Item">STONE_SWORD</item>
+		<item slot="1" lore="Loadout Item">BOW</item>
+		<item slot="2" amount="16">ARROW</item>
+	</loadout>
+</gametype>

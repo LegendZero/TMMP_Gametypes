@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gametype>
+	<!--Core Settings-->
+	<name display="Heavies">FFA_Heavies</name>
+	<description>Kill your enemies, kill your friends. Kill everything.</description>
+	<version>1.0.0</version>
+
+	<!--Team Settings-->
+	<teams>
+	</teams>
+
+	<!--Slayer Settings-->
+	<kill-points>1</kill-points>
+	<death-points>0</death-points>
+	<suicide-points>-1</suicide-points>
+	<betrayal-points>-1</betrayal-points>
+
+	<!--Game Settings-->
+	<score-to-win>25</score-to-win>
+	<time-limit>10</time-limit>
+	<friendly-fire>false</friendly-fire>
+	<betrayal-booting threshold="3">true</betrayal-booting>
+	<damage-multi>1.0</damage-multi>
+	<can-join-late>true</can-join-late>
+
+	<!--Round Settings-->
+	<rounds>1</rounds>
+	<lives-per-round>0</lives-per-round>
+
+	<!--Item Settings-->
+	<items initial="true" respawn="true" personal="true"/>
+	<loadout>
+		<item slot="0" >IRON_SWORD</item>
+		<item slot="2" >BOW</item>
+		<item slot="4" name="Lightning 'Nade" amount="2">SNOW_BALL</item>
+		<item slot="29" amount="16" name="Arrows">ARROW</item>
+	</loadout>
+</gametype>

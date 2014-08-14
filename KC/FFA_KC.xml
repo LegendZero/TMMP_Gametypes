@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gametype>
+	<!--Core Settings-->
+	<name display="Kill Confirmed FFA">FFA_KC</name>
+	<description>Collect fallen player's tags to earn points.</description>
+	<version>1.0.0</version>
+	
+	<!--Team Settings-->
+	<teams>
+	</teams>
+
+	<!--KillConfirmed Settings-->
+     <tag name="&amp;7Tags" >NAME_TAG</tag>
+     <score-kill>0</score-kill>
+     <score-tag>1</score-tag>
+     
+	<!--Game Settings-->
+	<score-to-win>25</score-to-win>
+	<time-limit>10</time-limit>
+	<friendly-fire>false</friendly-fire>
+	<betrayal-booting threshold="3">true</betrayal-booting>
+	<damage-multi>1.0</damage-multi>
+	<can-join-late>true</can-join-late>
+	
+	<!--Round Settings-->
+	<rounds>1</rounds>
+	<lives-per-round>0</lives-per-round>
+
+	<!--Item Settings-->
+	<items initial="true" respawn="true" personal="true"/>
+	<loadout>
+		<item slot="0" >STONE_SWORD</item>
+		<item slot="2" >BOW</item>
+		<item slot="29" amount="16" name="Arrows">ARROW</item>
+	</loadout>
+</gametype>

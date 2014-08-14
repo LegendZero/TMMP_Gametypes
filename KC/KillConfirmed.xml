@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gametype>
+	<!--Core Settings-->
+	<name display="Kill Confirmed">KillConfirmed</name>
+	<description>Collect fallen player's tags to earn points.</description>
+	<version>1.0.0</version>
+
+	<!--Team Settings-->
+	<teams>
+		<team>
+			<name>Red Team</name>
+			<display>&amp;cRed Team</display>
+			<prefix>&amp;c</prefix>
+			<suffix>&amp;r</suffix>
+			<armor>
+				<helmet color="FF0000" >LEATHER_HELMET</helmet>
+				<chestplate color="FF0000" >LEATHER_CHESTPLATE</chestplate>
+				<leggings color="FF0000" >LEATHER_LEGGINGS</leggings>
+				<boots color="FF0000" >LEATHER_BOOTS</boots>
+			</armor>
+		</team>
+		<team>
+			<name>Blue Team</name>
+			<display>&amp;9Blue Team</display>
+			<prefix>&amp;9</prefix>
+			<suffix>&amp;r</suffix>
+			<armor>
+				<helmet color="0000FF" >LEATHER_HELMET</helmet>
+				<chestplate color="0000FF" >LEATHER_CHESTPLATE</chestplate>
+				<leggings color="0000FF" >LEATHER_LEGGINGS</leggings>
+				<boots color="0000FF" >LEATHER_BOOTS</boots>
+			</armor>
+		</team>
+	</teams>
+
+	<!--KillConfirmed Settings-->
+     <tag name="&amp;7Tags" >NAME_TAG</tag>
+     <score-kill>0</score-kill>
+     <score-tag>1</score-tag>
+     
+	<!--Game Settings-->
+	<score-to-win>50</score-to-win>
+	<time-limit>10</time-limit>
+	<friendly-fire>false</friendly-fire>
+	<betrayal-booting threshold="3">true</betrayal-booting>
+	<damage-multi>1.0</damage-multi>
+	<can-join-late>true</can-join-late>
+	
+	<!--Round Settings-->
+	<rounds>1</rounds>
+	<lives-per-round>0</lives-per-round>
+
+	<!--Item Settings-->
+	<items initial="true" respawn="true" personal="true"/>
+	<loadout>
+		<item slot="0" >STONE_SWORD</item>
+		<item slot="2" >BOW</item>
+		<item slot="29" amount="16" name="Arrows">ARROW</item>
+	</loadout>
+</gametype>
